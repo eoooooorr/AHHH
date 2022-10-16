@@ -1,61 +1,97 @@
-<div id="sitebody">
-　<div id="header">header</div>
-　<div id="nav">nav</div>
-　<div id="aside">aside</div>
-　<div id="article">article</div>
-  <div id="section">section</div>
-　<div id="footer">footer</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">這邊通常叫header擺放內容會是logo或表單</div>
+    <div class="content">這邊叫content，顧名思義大部分的網頁內容放在這裡</div>
+    <div class="footer">這裡是footer，常放置聯絡資訊的地方</div>
+  </div>
+</body>
+</html>
 
-<style type="text/css">
-#sitebody{
-　width:600px;
-　margin:0 auto;
-　font-size:13px;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-#header{
-　background-color:#FFD4D4;
-　height:80px;
-　text-align:center;
-　line-height:80px;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-#nav{
-　background-color:#FFECC9;
-　width:120px;
-　height:400px;
-　text-align:center;
-　line-height:400px;
-　float:left;
+body {
+	line-height: 1;
 }
-#aside{
-　background-color:#FFECC9;
-　width:120px;
-　height:400px;
-　text-align:center;
-　line-height:400px;
-　float:right;
+ol, ul {
+	list-style: none;
 }
-#article{
-　margin-left:120px;
-　margin-right:120px;
-　height:400px;
-　background-color:#F2FFF2;
-　text-align:center;
-　line-height:400px;
+blockquote, q {
+	quotes: none;
 }
-#section{
-　margin-left:120px;
-　margin-right:120px;
-　height:400px;
-　background-color:#F2FFF2;
-　text-align:center;
-　line-height:400px;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-#footer{
-　clear:both;
-　background-color:#FFD4D4;
-　height:80px;
-　text-align:center;
-　line-height:80px;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-</style>
+*{
+  box-sizing: border-box;
+}
+
+.wrap{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.header,.content,.footer{
+  margin-bottom: 15px;
+  padding: 50px;
+  font-size:32px;
+  border:2px solid black
+}
+
+.header{
+  height: 200px;
+  background: pink;
+  color:blue;
+  margin-top:15px;
+}
+
+.content{
+  height: 500px;
+  background: orange;
+  color:purple;
+}
+
+.footer{
+  height: 150px;
+  background: green;
+  color:yellow;
+}
