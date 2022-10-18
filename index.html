@@ -6,23 +6,20 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="header">頂</div>
+    <div class="header">header</div>
+	  <div class="nav">nav</div>
     <div class="content">
-      <div class="left">左</div>
-      <div class="center">中</div>
-      <div class="right">右</div>
+      <div class="left">aside</div>
+      <div class="article">article<br><br><br> <br> <br><br><div class="section">section</div></div>
     </div>
     <div class="clearfix"></div>
-    <div class="footer">底</div>
+    <div class="footer">footer</div>
   </div> 
 
 	
-<style type="text/css">
+<style>
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+
 body {
 	line-height: 1;
 }
@@ -54,25 +51,42 @@ table {
 }
 
 .header,.footer{
-  border:1px solid black;
-  height: 200px;
-  margin:10px;
-  background:orange;
+  height: 100px;
+  margin:5px;
+  background:deeppink;
   font-size:32px;
   padding:50px;
 }
-
-.left,.center,.right{
-  border:1px solid black;
+.nav{
+  height: 50px;
+  margin:5px;
+  background:orange;
+  font-size:32px;
+  padding:50px;
+}	
+.left{
   height: 400px;
-  width: 280px;
+  width: 300px;
   float:left;
-  margin:10px;
+  margin:5px;
   padding:50px;
   background:pink;
   font-size:32px;
 }
-
+.article{
+  height: 400px;
+  width: 700px;
+  float:right;
+  margin:5px;
+  padding:50px;
+  background:deepskyblue;
+  font-size:32px;
+}
+.section{
+  background:yellow;
+  float:bottom;
+  height: 100px;
+}
 .left{
   width: 180px;
 }
@@ -84,13 +98,15 @@ table {
 }
 
 .footer{
-  border:1px solid black;
   height: 200px;
   margin:10px;
-  background:orange;
+  background:darkseagreen;
 }
 </style>
+
+
+
+<center>
+<p><a href="https://deinfant.github.io/infant/">go back</a></p>
+</center>
 </body>
-</html>
-
-
